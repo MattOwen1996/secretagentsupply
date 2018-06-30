@@ -47,6 +47,7 @@ body {
   width: 20rem;
   padding: 2rem 3rem;
   position: relative;
+  margin-left: 10rem;
 }
 
 .headline h4 {
@@ -58,4 +59,30 @@ body {
   display: block;
   font-size: 2rem;
   margin: 0.25rem 0;
+}
+
+/* nav */
+nav {
+  background-color: firebrick;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+ul.container {
+  color: white;
+  display: inline-flex;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+ul.container li {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
 }
