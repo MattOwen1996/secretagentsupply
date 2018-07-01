@@ -4,6 +4,14 @@ body {
   font-family: Helvetica, sans-serif;
 }
 
+div {
+  display: block;
+}
+
+img {
+  border-style: none;
+}
+
 /* header section */
 .header {
   background-color: black;
@@ -88,33 +96,81 @@ ul.container li {
 }
 
 /* items, times, and location */
-.products.business{
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+      }
+}
+
+.pb-container {
   background-color: white;
   padding-bottom: 4rem;
-  padding-top: 3rem;
-  display: inline-flex;
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
 .products {
   display: flex;
   justify-content: space-between;
+  margin: 3rem;
 }
 
-.pen, .watch, .glasses {
+.product {
   width: 30%;
+  align-items: center;
 }
 
-.pen span, .watch span, .glasses span {
+.product span {
   background-color: black;
   color: white;
+  display: block;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem 0;
+  font-family: Helvetica, sans-serif;
 }
 
 .product-image {
+  display: flex;
   height: 9rem;
   border: 4px solid black;
+  padding-top: 2rem 0;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
 }
 
 .product-image img {
   max-width: 8rem;
+  align-content: center;
+}
+
+#location {
+  background-color: black;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+#hours {
+  background-color: black;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+.business-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 3rem;
+}
+
+.business-container {
+  width: 35%;
 }
