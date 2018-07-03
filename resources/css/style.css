@@ -22,12 +22,12 @@ img {
   background-color: black;
 }
 
-.header-content {
+.header-content .container {
   color: white;
   padding-top: 0.66rem;
   padding-bottom: 0.66rem;
   display: flex;
-  align-items: center;
+  align-items: left;
 }
 
 .header-content img {
@@ -49,6 +49,10 @@ img {
   background-position: center;
   height: 25rem;
   padding-top: 9rem;
+}
+
+.container .headline {
+  align-items: left;
 }
 
 .headline {
