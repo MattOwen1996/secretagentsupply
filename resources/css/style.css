@@ -12,6 +12,11 @@ img {
   border-style: none;
 }
 
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
 /* header section */
 .header {
   background-color: black;
@@ -151,26 +156,50 @@ ul.container li {
   background-color: black;
   display: block;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   font-family: Helvetica, sans-serif;
   color: white;
+  margin-left: 3rem;
 }
 
 #hours {
   background-color: black;
   display: block;
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
   font-family: Helvetica, sans-serif;
   color: white;
+  margin-right: 3rem;
+}
+
+.info-l {
+  margin-left: 3rem;
+}
+
+.info-t {
+  margin-right: 3rem;
 }
 
 .business-info {
   display: flex;
   justify-content: space-between;
-  margin: 3rem;
 }
 
 .business-container {
   width: 35%;
+}
+
+/* footer */
+footer {
+  display: flex;
+  background-color: black;
+  height: 5rem;
+  color: white;
+  margin-top: 4rem;
+}
+
+.copyright span {
+  position: relative;
+  top: 2rem;
+  left: 3rem;
 }
