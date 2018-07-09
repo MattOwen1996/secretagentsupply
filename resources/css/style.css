@@ -1,4 +1,10 @@
 /* base */
+@media only screen and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+}
+
 body {
   font-size: 18px;
   font-family: Helvetica, sans-serif;
@@ -13,6 +19,7 @@ img {
 }
 
 .container {
+  display: flex;
   max-width: 960px;
   margin: 0 auto;
 }
@@ -43,6 +50,25 @@ img {
 }
 
 /* top section */
+@media only screen and (max-width: 470px) {
+  .top-banner {
+    height: 15rem;
+  }
+
+  .headline h4 {
+    font-size: 0.77rem;
+  }
+
+  .headline h1 {
+    font-size: 1rem;
+  }
+
+  .headline {
+    padding: 1rem 2rem;
+    margin-top: 10rem;
+  }
+}
+
 .top-banner {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
   background-repeat: no-repeat;
@@ -75,6 +101,21 @@ img {
 }
 
 /* nav */
+@media only screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  display: none;
+}
+
 nav {
   background-color: firebrick;
   color: white;
@@ -95,12 +136,6 @@ nav ul li {
 }
 
 /* items, times, and location */
-@media only screen and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-      }
-}
-
 .pb.container {
   background-color: white;
   padding-bottom: 4rem;
@@ -114,6 +149,22 @@ nav ul li {
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .product.watch {
+    display: none;
+  }
+
+  .product.glasses {
+    display: none;
+  }
 }
 
 .product {
@@ -147,6 +198,21 @@ nav ul li {
   align-content: center;
 }
 
+@media only screen and (max-width: 470px) {
+  .business-container {
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  #location {
+    text-align: left;
+  }
+
+  #hours {
+    text-align: left;
+  }
+}
+
 #location {
   background-color: black;
   display: block;
@@ -175,10 +241,23 @@ nav ul li {
 }
 
 /* footer */
+@media only screen and (width: 470px) {
+  footer {
+    text-align: center;
+  }
+}
+
 footer {
   display: flex;
   background-color: black;
   height: 5rem;
   color: white;
   margin-top: 4rem;
+  padding: 5rem 0;
+}
+
+footer span {
+  align-items: center;
+  padding-top: 2rem;
+  font-family: Helvetica, sans-serif;
 }
